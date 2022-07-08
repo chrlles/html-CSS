@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>td & tr</title>
+    <style>
+        #tabela{
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid black;
+                border-spacing: 0px;   /* espaço entre as bordas */
+        }
+        table#tabela td, th{
+            border: 1px solid black; /* borda */
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+        <!-- rowspan: expansão em linhas -->
+        <!-- coldspan: expansão em colunas-->
+    <table id="tabela">
+        <thead>
+            <th>Mês</th>
+            <th>Dia</th>
+        </thead>
+        <tbody>
+            <tr><td rowspan="2">Janeiro</td><td>13</td></tr>
+            <tr><td>19</td></tr>
+            <tr><td>fevereiro</td><td>28</td></tr>
+            <tr><td>Março</td><td>23</td></tr>
+            <tr><td>Abril</td><td>17</td></tr>
+            <tr><td>Maio</td><td>08</td></tr>
+        </tbody>    
+    </table>
+</body>
+</html>

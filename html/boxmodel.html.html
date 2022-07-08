@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Box Model</title>
+	<style type="text/css">
+		#box_inicial{
+			width:200px;
+			height:1000px;
+			background-color:#FFC89B
+		}
+			p#sem_pseudo_classe{
+			font-size:12px;
+			color:#000000;
+			}
+		
+		}
+			p#sem_pseudo_classe span.primeira_letra_fonte_maior{
+			font-size:26px;
+			color:#0000ff;
+			}
+			
+		p#com_pseudo_classe{
+			font-size:20px;
+			color:000000;
+		}
+			p#com_pseudo_classe:first-letter{
+				font-size:70px;
+				color:#000000;
+			}
+	</style>	
+</head>	
+<body>
+	<div id="box_inicial"> </div>
+	
+	<p id="com_pseudo_classe">
+	<span class="primeira_letra_fonte_maior">H</span>oje é dia 14/03/2022.
+	</p>
+	
+	<p id="sem_pseudo_classe">
+		Texto do parágrafo sem pseudo classe.
+	</p>
+	
+</body>
+</html>
+	

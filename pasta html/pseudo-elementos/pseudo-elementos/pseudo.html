@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="utf-8">
+    <title>Box Model em CSS</title>
+    <style type="text/css">
+        p#sem_pseudo_classe{
+            font-size:15px;
+            color: #4B4952;
+        }
+            p#sem_pseudo_classe span.primeira_letra_fonte_maior{
+                font-size:29px;
+                color: #4B4952;
+            }
+
+    p#com_pseudo_classe{
+        font-size:20px;
+        color:#4B4952;
+    }       
+
+        p#com_pseudo_classe::first-letter{
+            font-size:50px;
+            color:#D92525;
+        }
+    </style>
+</head>
+<body>
+    <p id="sem_pseudo_classe">
+        <span class="primeira_letra_fonte_maior">N</span>eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+    </p>
+
+    <p id="com_pseudo_classe">
+        Não há quem goste de dor, que a procure e a queira ter, simplesmente porque é dor...
+    </p>
+</body>
+</html>
